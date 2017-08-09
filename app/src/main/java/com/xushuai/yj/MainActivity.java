@@ -12,6 +12,8 @@ import android.widget.TabHost.TabSpec;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
+import com.xushuai.yj.utils.TabDb;
+
 public class MainActivity extends FragmentActivity implements OnTabChangeListener {
 
     private FragmentTabHost mTabHost;

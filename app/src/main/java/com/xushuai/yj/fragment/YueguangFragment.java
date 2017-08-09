@@ -10,15 +10,16 @@ import android.view.ViewGroup;
 import com.xushuai.yj.R;
 
 /**
- * Created by 王兵洋 on 2017/3/13.
+ * date:2017/8/8
+ * author:徐帅(acer)
+ * funcation: 月光茶人Fragment
  */
-
 public class YueguangFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = View.inflate(getActivity(), R.layout.yueguang,null);
+        View view = View.inflate(getActivity(), R.layout.yueguang, null);
         return view;
     }
 }

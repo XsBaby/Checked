@@ -1,9 +1,16 @@
-package com.xushuai.yj;
+package com.xushuai.yj.utils;
 
+import com.xushuai.yj.R;
 import com.xushuai.yj.fragment.MineFragment;
 import com.xushuai.yj.fragment.ShoppingFragment;
 import com.xushuai.yj.fragment.YouhuiFragment;
 import com.xushuai.yj.fragment.YueguangFragment;
+
+/**
+ * date:2017/8/9
+ * author:徐帅(acer)
+ * funcation: 工具类，设置底部导航字体和图片
+ */
 
 public class TabDb {
     /***
