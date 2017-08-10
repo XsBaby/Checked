@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/yh_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/yh_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/yh_image"
+        android:text="招牌烧仙草"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/yh_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yh_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/yh_image"
+        android:text="来自台湾的多种原料的结合，不仅营养丰富，味道鲜美，还可以饱腹一顿"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/yh_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yh_des"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/yh_image"
+        android:text="￥ 10.00"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/yh_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/yh_des"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/yh_price"
+        android:text="已售出2342份"/>
+
+</RelativeLayout>
