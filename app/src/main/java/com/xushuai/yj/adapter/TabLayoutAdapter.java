@@ -1,10 +1,10 @@
 package com.xushuai.yj.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.view.View;
+import android.view.ViewGroup;
 
-import com.xushuai.yj.fragment.TabLFragment;
+import java.util.List;
 
 /**
  * date:2017/8/9
@@ -12,26 +12,32 @@ import com.xushuai.yj.fragment.TabLFragment;
  * funcation: 优惠界面TabLayout的适配器
  */
 
-public class TabLayoutAdapter extends FragmentPagerAdapter {
-    String[] title = new String[]{"天天优惠", "为你精选", "亲的最爱"};
+public class TabLayoutAdapter extends PagerAdapter {
+    private List<View> mlist;
 
-    public TabLayoutAdapter(FragmentManager fm) {
-        super(fm);
-    }
-
-    @Override
-    public Fragment getItem(int position) {
-        TabLFragment fragment = new TabLFragment();
-        return fragment;
+    public TabLayoutAdapter(List<View> mlist) {
+        this.mlist = mlist;
     }
 
     @Override
     public int getCount() {
-        return title.length;
+        return mlist != null ? mlist.size() : 0;
     }
 
     @Override
-    public CharSequence getPageTitle(int position) {
-        return title[position];
+    public boolean isViewFromObject(View view, Object object) {
+        return view == object;
+    }
+
+    @Override
+    public Object instantiateItem(ViewGroup container, int position) {
+        View view = mlist.get(position);
+        container.addView(view);
+        return view;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        container.removeView(mlist.get(position));
     }
 }
