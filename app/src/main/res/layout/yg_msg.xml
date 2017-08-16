@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/yg_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/yg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/yg_image"
+        android:text="招牌水果茶"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/yg_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yg_name"
+        android:layout_below="@+id/yg_name"
+        android:layout_marginTop="10dp"
+        android:text="￥ 16.00"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

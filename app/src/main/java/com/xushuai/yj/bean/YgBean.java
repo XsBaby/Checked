@@ -9,6 +9,7 @@ import java.util.List;
  */
 
 public class YgBean {
+
     /**
      * status : true
      * code : 1
@@ -356,10 +357,10 @@ public class YgBean {
                  * remarks : null
                  * featured : null
                  * description : <p>
-                 * <br />
-                 * <div id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd">
-                 * &nbsp;</div>
-                 * </p>
+                 <br />
+                 <div id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd">
+                 &nbsp;</div>
+                 </p>
                  * image_medium :
                  * image_large :
                  * app_featured_topic : null

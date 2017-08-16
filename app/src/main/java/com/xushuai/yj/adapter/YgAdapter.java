@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * date:2017/8/9
  * author:徐帅(acer)
- * funcation: 月光茶人界面的适配器
+ * funcation: 月光茶人界面商品名的适配器
  */
 
 public class YgAdapter extends BaseAdapter {
@@ -45,7 +45,7 @@ public class YgAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder = null;
         if (convertView == null) {
-            convertView = View.inflate(context, R.layout.list_item1, null);
+            convertView = View.inflate(context, R.layout.yg_name, null);
             viewHolder = new ViewHolder();
             viewHolder.title__tean = (TextView) convertView.findViewById(R.id.title_tean);
             convertView.setTag(viewHolder);
