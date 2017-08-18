@@ -1,5 +1,6 @@
 package com.xushuai.yj.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -12,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.google.gson.Gson;
+import com.xushuai.yj.DetailActivity;
 import com.xushuai.yj.R;
 import com.xushuai.yj.adapter.YgAdapter;
 import com.xushuai.yj.adapter.YgitemAdapter;
@@ -48,6 +50,7 @@ public class YueguangFragment extends Fragment {
             super.handleMessage(msg);
         }
     };
+    private List<YgBean.DataBean.CategoriesBean.ProductsBean> products;
 
     @Nullable
     @Override
@@ -77,11 +80,33 @@ public class YueguangFragment extends Fragment {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                List<YgBean.DataBean.CategoriesBean.ProductsBean> products = list.get(position).getProducts();
+                products = list.get(position).getProducts();
                 //给商品信息设置适配器
                 iadapter = new YgitemAdapter(getActivity(), products);
                 msg.setAdapter(iadapter);
                 iadapter.notifyDataSetChanged();
+            }
+        });
+
+        //第二个listview的点击事件，点击进入详情页
+        msg.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(), DetailActivity.class);
+                //传name
+                intent.putExtra("name", products.get(position).getName());
+                //传价格
+                intent.putExtra("xj", products.get(position).getFeatured_price());
+                intent.putExtra("yj", products.get(position).getPrice());
+                //传描述
+                intent.putExtra("des", products.get(position).getShort_description());
+                //传图片
+                intent.putExtra("image1", products.get(position).getApp_long_image1());
+                intent.putExtra("image2", products.get(position).getApp_long_image2());
+                intent.putExtra("image3", products.get(position).getApp_long_image3());
+                intent.putExtra("image4", products.get(position).getApp_long_image4());
+                intent.putExtra("image5", products.get(position).getApp_long_image5());
+                startActivity(intent);
             }
         });
     }

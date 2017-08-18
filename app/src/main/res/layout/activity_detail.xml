@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/xq_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@mipmap/ic_browser_nav_back"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="商品详情"
+        android:textSize="25sp"/>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dp">
+    </com.youth.banner.Banner>
+
+    <TextView
+        android:id="@+id/xq_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xq_back"
+        android:layout_alignStart="@+id/xq_back"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="8dp"
+        android:text="锡兰极品红茶"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/xq_xj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/xq_name"
+        android:text="￥8.00"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/xq_yj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/xq_xj"
+        android:text="￥10.00"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/xq_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xq_xj"
+        android:layout_margin="7dp"
+        android:text="进口印度著名的锡兰之都阿尔邦区，采用最原始的手工，保持茶叶的纯正"
+        android:textSize="18dp"/>
+
+    <View
+        android:id="@+id/xian"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/xq_des"
+        android:layout_margin="5dp"
+        android:background="@color/se"></View>
+
+    <TextView
+        android:id="@+id/kw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xian"
+        android:layout_margin="5dp"
+        android:text="请选择您的口味"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/xq_wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kw"
+        android:layout_marginLeft="40dp"
+        android:text="温度"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/norm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kw"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/xq_wd"
+        android:background="@color/mo"
+        android:gravity="center"
+        android:text="标准"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/xq_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xq_wd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="糖量"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/norm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/norm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/xq_sugar"
+        android:background="@color/mo"
+        android:gravity="center"
+        android:text="标准"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/xq_sugar"
+        android:layout_marginTop="35dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/collect"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_car"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xq_joingwc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/norm2"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/bottom"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:text="加入购物车"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+</RelativeLayout>

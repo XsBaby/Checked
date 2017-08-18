@@ -41,10 +41,8 @@ public class YouhuiFragment extends Fragment {
     private ViewPager viewPager;
     private TabLayoutAdapter tabLayoutAdapter;
     private List<View> mlist = new ArrayList<>();
-    private List<YhBean.DataBean.ProductsBean> list;
     private ListView yh_lv;
     private ListView jx_lv;
-    private YhAdapter adapter;
     private View wnjx;
     private View ttyh;
     private View qdza;
@@ -63,8 +61,6 @@ public class YouhuiFragment extends Fragment {
         //添加界面
         initData();
 
-        //请求第一个接口数据
-//        initPost();
         return view;
     }
 
