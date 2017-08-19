@@ -17,10 +17,8 @@
         android:id="@+id/bj"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/my"
-        android:layout_marginTop="20dp"
-        android:src="@mipmap/personal_bkg"/>
+        android:layout_marginTop="30dp"
+        android:src="@drawable/personal_bkg"/>
 
     <ImageView
         android:id="@+id/mine_head"
@@ -29,15 +27,15 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/my"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="18dp"
-        android:src="@mipmap/profile_default"/>
+        android:layout_marginTop="35dp"
+        android:src="@drawable/profile_default"/>
 
     <TextView
         android:id="@+id/mine_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="75dp"
         android:layout_toRightOf="@+id/mine_head"
         android:text="18610463512"
         android:textSize="25sp"/>
@@ -59,7 +57,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="55dp"
         android:layout_toRightOf="@+id/mine_phone"
-        android:src="@mipmap/right"/>
+        android:src="@drawable/right"/>
 
     <ImageView
         android:id="@+id/dd"
@@ -67,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/bj"
         android:layout_marginLeft="10dp"
-        android:src="@mipmap/my_order_user_icon_normal"/>
+        android:src="@drawable/my_order_user_icon_normal"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -85,7 +83,7 @@
         android:layout_alignBottom="@id/dd"
         android:layout_alignParentRight="true"
         android:layout_below="@id/bj"
-        android:src="@mipmap/right"/>
+        android:src="@drawable/right"/>
 
     <LinearLayout
         android:id="@+id/line"
@@ -100,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/icon_wallet"
+            android:drawableTop="@drawable/icon_wallet"
             android:gravity="center_horizontal"
             android:text="待付款"/>
 
@@ -109,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/icon_car"
+            android:drawableTop="@drawable/icon_car"
             android:gravity="center_horizontal"
             android:text="待收获"/>
 
@@ -118,7 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/icon_review"
+            android:drawableTop="@drawable/icon_review"
             android:gravity="center_horizontal"
             android:text="交易完成"/>
     </LinearLayout>
@@ -127,7 +125,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/line"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="10dp">
 
         <include
             android:id="@+id/include"
