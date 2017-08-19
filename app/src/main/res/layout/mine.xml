@@ -4,10 +4,133 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
+    <TextView
+        android:id="@+id/my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="我的"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/bj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/my"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/personal_bkg"/>
+
+    <ImageView
+        android:id="@+id/mine_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/my"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/profile_default"/>
+
+    <TextView
+        android:id="@+id/mine_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/mine_head"
+        android:text="18610463512"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mine_phone"
+        android:layout_below="@+id/mine_phone"
+        android:layout_marginTop="10dp"
+        android:text="铜牌用户"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/right_jt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@+id/mine_phone"
+        android:src="@mipmap/right"/>
+
+    <ImageView
+        android:id="@+id/dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bj"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/my_order_user_icon_normal"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="第四个界面"
-        android:textSize="30sp"/>
+        android:layout_below="@id/bj"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/dd"
+        android:text="我的订单"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/right_dd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/dd"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bj"
+        android:src="@mipmap/right"/>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dd"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mine_fukuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_wallet"
+            android:gravity="center_horizontal"
+            android:text="待付款"/>
+
+        <TextView
+            android:id="@+id/mine_shouhuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_car"
+            android:gravity="center_horizontal"
+            android:text="待收获"/>
+
+        <TextView
+            android:id="@+id/mine_jiaoyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/icon_review"
+            android:gravity="center_horizontal"
+            android:text="交易完成"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_marginTop="20dp">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/mine2"/>
+    </ScrollView>
 </RelativeLayout>
