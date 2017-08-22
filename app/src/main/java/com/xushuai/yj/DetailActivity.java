@@ -25,6 +25,7 @@ public class DetailActivity extends Activity implements View.OnClickListener {
     private String name, xj, yj, des, image1, image2, image3, image4, image5;
     private Banner banner;
     private ArrayList<String> images = new ArrayList<>();
+    private TextView join;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,8 +64,11 @@ public class DetailActivity extends Activity implements View.OnClickListener {
         xq_yj = (TextView) findViewById(R.id.xq_yj);
         xq_des = (TextView) findViewById(R.id.xq_des);
         banner = (Banner) findViewById(R.id.banner);
+        //加入购物车控件id
+        join = (TextView) findViewById(R.id.xq_joingwc);
 
         xq_back.setOnClickListener(this);
+        join.setOnClickListener(this);
     }
 
     private void initData() {
@@ -86,6 +90,9 @@ public class DetailActivity extends Activity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.xq_back:
                 finish();
+                break;
+            case R.id.xq_joingwc:
+
                 break;
         }
     }
