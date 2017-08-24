@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/icon_car"
+            android:drawableTop="@drawable/icon_car"
             android:gravity="center"
             android:text="购物车"
             android:textColor="@color/white"
